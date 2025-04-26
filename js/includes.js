@@ -14,7 +14,6 @@ function loadHTML(id, url) {
     });
 }
 
-// Load external HTML parts
 document.addEventListener("DOMContentLoaded", function() {
   loadHTML("header-placeholder", "header.html");
   loadHTML("contact-placeholder", "contact.html");
