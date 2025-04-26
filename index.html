@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sites by Jean</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Base styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #FAF9F6;
+      color: #2C3E50;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2C3E50;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #F0F8F6;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background-color: #6BBBAE;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #589e90;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .services, .portfolio {
+      display: grid;
+      gap: 30px;
+    }
+
+    .service-item, .portfolio-item {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #f1f1f1;
+      font-size: 0.9em;
+      color: #7d7d7d;
+    }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      .services, .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h2>Sites by Jean</h2>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Handmade websites for small businesses and creatives.</h1>
+    <p>Thoughtfully crafted websites that help you shine online.</p>
+    <a href="#contact" class="button">Work with Jean</a>
+  </section>
+
+  <section id="about">
+    <h2>Meet Jean</h2>
+    <p>I'm Jean — a web designer who believes in thoughtful, handmade websites that reflect the heart of your business. I specialize in helping small businesses, creatives, and entrepreneurs build a beautiful and professional online home — with care, with love, and without the overwhelm.</p>
+    <br>
+    <a href="#services" class="button">Learn More</a>
+  </section>
+
+  <section id="services">
+    <h2>What I Offer</h2>
+    <div class="services">
+      <div class="service-item">
+        <h3>Custom Websites</h3>
+        <p>Thoughtfully designed to match your brand and goals.</p>
+      </div>
+      <div class="service-item">
+        <h3>Website Refreshes</h3>
+        <p>Give your current site a fresh, modern update.</p>
+      </div>
+      <div class="service-item">
+        <h3>Friendly Support</h3>
+        <p>Clear communication and help, every step of the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Recent Projects</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <p><strong>Elegant bakery site for The Bread Basket</strong></p>
+      </div>
+      <div class="portfolio-item">
+        <p><strong>Clean portfolio for artist May Chen</strong></p>
+      </div>
+      <div class="portfolio-item">
+        <p><strong>Modern consulting site for BrightPath Consulting</strong></p>
+      </div>
+    </div>
+    <br>
+    <a href="#contact" class="button">View Full Portfolio</a>
+  </section>
+
+  <section id="contact">
+    <h2>Ready for a website crafted with care?</h2>
+    <p>I'd love to hear about your project.</p>
+    <br>
+    <a href="mailto:your-email@example.com" class="button">Get in Touch</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Sites by Jean | Handmade websites, crafted with care.</p>
+  </footer>
+
+</body>
+</html>
