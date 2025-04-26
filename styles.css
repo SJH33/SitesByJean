@@ -1,95 +1,38 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Base styles */
+/* Body and layout */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #FAF9F6;
-  color: #2C3E50;
-  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8f9fa;
 }
 
+/* Header */
 header {
-  background-color: #ffffff;
-  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1000;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #2C3E50;
-  font-weight: 500;
+.logo-img {
+  max-width: 150px;
 }
 
-.hero {
-  padding: 80px 20px;
-  text-align: center;
-  background-color: #F0F8F6;
+/* Hero Section */
+.hero-logo {
+  max-width: 200px;
 }
 
-.hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-}
-
-.button {
-  background-color: #6BBBAE;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 25px;
-  font-size: 1em;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #589e90;
-}
-
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-.services, .portfolio {
-  display: grid;
-  gap: 30px;
-}
-
-.service-item, .portfolio-item {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
+/* Footer */
 footer {
-  padding: 20px;
-  text-align: center;
   background-color: #f1f1f1;
-  font-size: 0.9em;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
   color: #7d7d7d;
-}
-
-/* Responsive */
-@media (min-width: 600px) {
-  .services, .portfolio {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
