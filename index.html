@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,93 +7,70 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
     header {
       position: sticky;
       top: 0;
       background: #ffffff;
       z-index: 1000;
-      padding: 20px;
+      padding: 10px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #7d7d7d;
+    }
   </style>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 
-  <header>
-    <div class="logo">
-      <img src="SitesByJeanLogo2.png" alt="Sites by Jean Logo" style="max-width: 150px;">
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">
+    <img src="SitesByJeanLogo2.png" alt="Sites by Jean Logo" style="max-width: 150px;">
+  </div>
+  <nav>
+    <a href="#about" class="me-3">About</a>
+    <a href="#services" class="me-3">Services</a>
+    <a href="#portfolio" class="me-3">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero d-flex flex-column align-items-center justify-content-center text-center p-5 bg-light">
+<main class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <div class="my-auto">
     <img src="SitesByJeanLogo.png" alt="Sites by Jean Logo" class="img-fluid mb-4" style="max-width: 200px;">
-    <h1 class="display-5 fw-bold">Handmade websites for small businesses and creatives.</h1>
+    <h1 class="display-4 fw-bold">Handmade websites for small businesses and creatives.</h1>
     <p class="lead">Thoughtfully crafted websites that help you shine online.</p>
-    <a href="#contact" class="btn btn-primary mt-3">Work with Jean</a>
-  </section>
+    <p class="lead">
+      <a href="#contact" class="btn btn-lg btn-primary fw-bold">Work with Jean</a>
+    </p>
+  </div>
+</main>
 
-  <section id="about">
-    <h2>Meet Jean</h2>
-    <p>I'm Jean — a web designer who believes in thoughtful, handmade websites that reflect the heart of your business. I specialize in helping small businesses, creatives, and entrepreneurs build a beautiful and professional online home — with care, with love, and without the overwhelm.</p>
-    <br>
-    <a href="#services" class="button">Learn More</a>
-  </section>
+<footer class="mt-auto">
+  <p>© 2025 Sites by Jean | Handmade websites, crafted with care.</p>
+</footer>
 
-  <section id="services">
-    <h2>What I Offer</h2>
-    <div class="services">
-      <div class="service-item">
-        <h3>Custom Websites</h3>
-        <p>Thoughtfully designed to match your brand and goals.</p>
-      </div>
-      <div class="service-item">
-        <h3>Website Refreshes</h3>
-        <p>Give your current site a fresh, modern update.</p>
-      </div>
-      <div class="service-item">
-        <h3>Friendly Support</h3>
-        <p>Clear communication and help, every step of the way.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="portfolio">
-    <h2>Recent Projects</h2>
-    <div class="portfolio">
-      <div class="portfolio-item">
-        <p><strong>Elegant bakery site for The Bread Basket</strong></p>
-      </div>
-      <div class="portfolio-item">
-        <p><strong>Clean portfolio for artist May Chen</strong></p>
-      </div>
-      <div class="portfolio-item">
-        <p><strong>Modern consulting site for BrightPath Consulting</strong></p>
-      </div>
-    </div>
-    <br>
-    <a href="#contact" class="button">View Full Portfolio</a>
-  </section>
-
-  <section id="contact">
-    <h2>Ready for a website crafted with care?</h2>
-    <p>I'd love to hear about your project.</p>
-    <br>
-    <a href="mailto:your-email@example.com" class="button">Get in Touch</a>
-  </section>
-
-  <footer>
-    <p>© 2025 Sites by Jean | Handmade websites, crafted with care.</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
