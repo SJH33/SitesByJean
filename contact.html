@@ -24,7 +24,7 @@
 
 <div id="header-placeholder"></div>
 
-<main class="container d-flex flex-column justify-content-center align-items-center text-center" data-aos="fade-up" style="min-height: calc(100vh - 120px); padding-top: 6rem;">
+<main class="container d-flex flex-column justify-content-center align-items-center text-center" style="min-height: calc(100vh - 120px); padding-top: 6rem;" data-aos="fade-up">
   <div class="mb-5">
     <h1 class="display-5 fw-bold">Get in Touch</h1>
     <p class="lead">I'd love to hear about your project!</p>
@@ -67,11 +67,11 @@
     easing: 'ease-in-out',
   });
 
-  // Handle form submission
+  // Handle Formspree submission
   document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form");
     form.addEventListener("submit", async function(e) {
-      e.preventDefault(); // prevent actual form submission
+      e.preventDefault(); // Prevent reload
 
       const formData = new FormData(form);
 
@@ -92,7 +92,19 @@
             </div>
           `;
         } else {
-          form.innerHTML = `
-            <div class="text-center p-5">
-              <h2 class="text-danger">Oops!</h2>
-              <p>Something went wrong. Please try again later or email me
+          throw new Error('Form submission error');
+        }
+      } catch (error) {
+        form.innerHTML = `
+          <div class="text-center p-5">
+            <h2 class="text-danger">Oops!</h2>
+            <p>Something went wrong. Please try again later or email me directly.</p>
+          </div>
+        `;
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
