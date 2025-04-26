@@ -1,4 +1,4 @@
-/* General Page Settings */
+/* General Settings */
 html, body {
   height: 100%;
   margin: 0;
@@ -16,17 +16,7 @@ body {
   position: relative;
 }
 
-/* Main Layout */
-main {
-  flex: 1 0 auto;
-  min-height: 100vh; /* no subtraction anymore */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 3rem 1rem;
-}
-
-/* Header & Navbar */
+/* Header (Navbar) */
 header {
   position: absolute;
   top: 0;
@@ -54,7 +44,19 @@ header {
   transform: translateY(-2px);
 }
 
-/* Hero Section */
+/* Main Layout (shared) */
+main {
+  flex: 1 0 auto;
+  min-height: calc(100vh - 120px); /* Full screen minus header/footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+/* Hero Section for Homepage */
 .cover-container {
   text-align: center;
 }
@@ -88,11 +90,20 @@ header {
   transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Top-centered title section for Portfolio and Contact */
+/* Page Top Section for Portfolio and Contact */
 .page-top-section {
-  margin-top: 120px; /* to account for navbar height */
-  text-align: center;
+  padding-top: 6rem;
   margin-bottom: 2rem;
+}
+
+/* Portfolio Cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Contact Form */
