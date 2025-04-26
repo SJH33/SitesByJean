@@ -40,7 +40,8 @@ header {
 }
 
 .hero-logo {
-  max-width: 200px;
+  max-width: 400px;
+  width: 100%;
   height: auto;
 }
 
@@ -85,7 +86,7 @@ footer p {
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .hero-logo {
-    max-width: 150px;
+    max-width: 300px;
   }
   
   .display-4 {
@@ -105,5 +106,9 @@ footer p {
 
   .navbar-nav .nav-link {
     padding: 0.5rem 0;
+  }
+
+  .hero-logo {
+    max-width: 250px;
   }
 }
