@@ -21,14 +21,40 @@
   <script src="js/includes.js" defer></script>
 
   <style>
-    html {
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
       scroll-behavior: smooth;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1 0 auto;
+      min-height: calc(100vh - 120px);
+      padding: 3rem 1rem;
+    }
+    footer {
+      background-color: #f8f9fa;
+      border-top: 1px solid #dee2e6;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #6c757d;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    footer p {
+      margin-bottom: 0;
     }
   </style>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
 
 <div id="header-placeholder"></div>
+
 <main class="container my-5" data-aos="fade-up">
   <div class="text-center mb-5">
     <h1 class="display-5 fw-bold">Portfolio</h1>
@@ -36,44 +62,31 @@
   </div>
 
   <div class="row g-4">
-    <!-- Portfolio Item 1 -->
+    <!-- Math with Ms. Jean -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-       <a href="https://mathwithmsjean.org" target="_blank" class="text-decoration-none text-dark">
+      <a href="https://mathwithmsjean.org" target="_blank" class="text-decoration-none text-dark">
         <div class="card shadow-sm h-100">
-          <img src="images/portfolio_sample1.png" class="card-img-top" alt="Sample Website 1">
+          <img src="images/portfolio-mathwithmsjean.jpg" class="card-img-top" alt="Math with Ms. Jean">
           <div class="card-body">
             <h5 class="card-title">Math with Ms. Jean</h5>
-            <p class="card-text">A bright and friendly tutoring website designed for elementary and middle school students. Math with Ms. Jean highlights personalized math learning programs, easy-to-navigate resources, and a welcoming space for families seeking academic support.</p>
+            <p class="card-text">A bright and welcoming tutoring website designed to support elementary and middle school students with personalized math learning programs.</p>
           </div>
         </div>
+      </a>
     </div>
 
-
-    
-    <!-- Portfolio Item 2 -->
+    <!-- Burcu Meric -->
     <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-      <a href="https://burcumeric.netlify.app" target="_blank" class="text-decoration-none text-dark">
-       
-      <div class="card shadow-sm h-100">
-        <img src="images/portfolio_sample2.png" class="card-img-top" alt="Sample Website 2">
-        <div class="card-body">
-          <h5 class="card-title">Burcu Meric</h5>
-          <p class="card-text">A stylish and elegant portfolio website for a visual artist. Burcu Meric’s site showcases a curated collection of artwork with clean galleries, soft colors, and a design that highlights her creativity and modern aesthetic.</p>
+      <a href="#" target="_blank" class="text-decoration-none text-dark">
+        <div class="card shadow-sm h-100">
+          <img src="images/portfolio-burcumeric.jpg" class="card-img-top" alt="Burcu Meric">
+          <div class="card-body">
+            <h5 class="card-title">Burcu Meric</h5>
+            <p class="card-text">A stylish portfolio website for a visual artist, featuring curated artwork galleries and a modern, minimalistic design aesthetic.</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
-
-    <!-- Portfolio Item 3 -->
-    <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-      <div class="card shadow-sm h-100">
-        <img src="images/portfolio-sample3.jpg" class="card-img-top" alt="Sample Website 3">
-        <div class="card-body">
-          <h5 class="card-title">Sample Website 3</h5>
-          <p class="card-text">Professional consulting site designed for growing businesses.</p>
-        </div>
-      </div>
-    </div>
-
   </div>
 </main>
 
