@@ -1,8 +1,14 @@
 /* General Page Settings */
-html, body {
-  height: 100%;
-  scroll-behavior: smooth;
-}
+ html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    
+    
+    
+
 
 body {
   display: flex;
@@ -106,6 +112,10 @@ footer {
 footer p {
   margin-bottom: 0;
 }
+
+
+
+
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
