@@ -1,14 +1,10 @@
 /* General Page Settings */
- html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-    
-    
-    
-
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
 body {
   display: flex;
@@ -17,21 +13,29 @@ body {
   background-color: #f8f9fa;
   font-family: 'Poppins', sans-serif;
   color: #2C3E50;
+  position: relative;
 }
 
 /* Main Layout */
 main {
   flex: 1 0 auto;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh; /* no subtraction anymore */
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding: 3rem 1rem;
 }
 
 /* Header & Navbar */
 header {
-  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
@@ -84,6 +88,13 @@ header {
   transition: opacity 1s ease, transform 1s ease;
 }
 
+/* Top-centered title section for Portfolio and Contact */
+.page-top-section {
+  margin-top: 120px; /* to account for navbar height */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 /* Contact Form */
 #contact {
   padding: 60px 20px;
@@ -106,16 +117,12 @@ footer {
   font-size: 0.9rem;
   color: #6c757d;
   text-align: center;
-  margin-top: auto;
+  flex-shrink: 0;
 }
 
 footer p {
   margin-bottom: 0;
 }
-
-
-
-
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
