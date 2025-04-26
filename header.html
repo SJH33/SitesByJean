@@ -1,13 +1,20 @@
-<header>
-  <div class="logo">
-    <a href="#top">
-      <img src="images/SitesByJeanLogo2.png" alt="Sites by Jean Logo" class="logo-img">
+<header class="p-3 bg-white shadow-sm sticky-top">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between">
+    <a href="#top" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+      <img src="images/SitesByJeanLogo2.png" alt="Sites by Jean Logo" class="logo-img" style="max-height: 50px;">
     </a>
+
+    <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-3">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
   </div>
-  <nav>
-    <a href="#about" class="me-3 nav-link">About</a>
-    <a href="#services" class="me-3 nav-link">Services</a>
-    <a href="#portfolio" class="me-3 nav-link">Portfolio</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </nav>
 </header>
