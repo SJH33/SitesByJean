@@ -1,4 +1,4 @@
-/* General body and page settings */
+/* General Page Settings */
 body {
   display: flex;
   flex-direction: column;
@@ -8,29 +8,30 @@ body {
   color: #2C3E50;
 }
 
-/* Smooth scroll for anchor links */
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Header section */
+/* Header & Navbar */
 header {
   background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .logo-img {
   max-height: 50px;
 }
 
-/* Navigation links */
 .navbar-nav .nav-link {
   color: #2C3E50;
   font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
   color: #6BBBAE;
+  transform: translateY(-2px);
 }
 
 /* Hero Section */
@@ -68,14 +69,20 @@ form button {
 
 /* Footer */
 footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 1rem 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 20px 0;
   font-size: 0.9rem;
-  color: #7d7d7d;
+  color: #6c757d;
+  text-align: center;
+  margin-top: auto;
 }
 
-/* Responsive adjustments */
+footer p {
+  margin-bottom: 0;
+}
+
+/* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .hero-logo {
     max-width: 150px;
@@ -95,7 +102,7 @@ footer {
     gap: 1rem;
     text-align: center;
   }
-  
+
   .navbar-nav .nav-link {
     padding: 0.5rem 0;
   }
