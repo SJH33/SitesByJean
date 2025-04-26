@@ -22,7 +22,7 @@ body {
 /* Main Layout */
 main {
   flex: 1 0 auto;
-  min-height: min-height: calc(100vh - 120px)
+  min-height: min-height: calc(100vh - 120px);
   display: flex;
   align-items: center;
   justify-content: center;
