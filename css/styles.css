@@ -1,4 +1,9 @@
 /* General Page Settings */
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -8,9 +13,14 @@ body {
   color: #2C3E50;
 }
 
-/* Smooth Scroll */
-html {
-  scroll-behavior: smooth;
+/* Main Layout */
+main {
+  flex: 1 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
 }
 
 /* Header & Navbar */
@@ -36,22 +46,36 @@ header {
 
 /* Hero Section */
 .cover-container {
-  padding: 3rem 1rem;
+  text-align: center;
 }
 
 .hero-logo {
   max-width: 400px;
   width: 100%;
   height: auto;
+  transition: transform 1.2s ease, opacity 1.2s ease;
+}
+
+/* Smooth appearance for hero content */
+.hero-logo[data-aos="zoom-in"] {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+.hero-logo[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .display-4 {
   font-weight: 700;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .lead {
   font-size: 1.25rem;
   font-weight: 400;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 /* Contact Form */
